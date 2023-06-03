@@ -2,14 +2,14 @@ pipeline {
     agent any 
 
     tools { 
-        maven 'mavenjenkins'
-        jdk 'jenkinsjava'
+        maven 'jenkinsmaven'
+        jdk 'java11'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/MiguelAngelRamos/control.git'
+                git branch: 'main', url: 'https://github.com/rvasquezf/control.git'
             }
         }
 
