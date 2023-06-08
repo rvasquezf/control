@@ -19,4 +19,11 @@ public class AppTest {
       assertEquals(Arrays.asList("HOLA", "MUNDO", "JAVA", "8"), App.convertToUpperCase(strings));
   }
   
+  @Test
+  void testCalculateAverage() {
+      List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+      assertEquals(6.0, App.calculateAverage(numbers));
+  }
+  
+  
 }
