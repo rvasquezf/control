@@ -13,12 +13,6 @@ public class App {
             .sum();
   }
   
-//  public static int calculateProduct(List<Integer> numbers) {
-//	    return numbers.stream()
-//	            .filter(n -> n % 2 == 0)
-//	            .mapToInt(n -> n * 2)
-//	            .reduce(1, (a, b) -> a * b);
-//	}
   
   public static double calculateAverage(List<Integer> numbers) {
 	    return numbers.stream()
